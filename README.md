@@ -1,4 +1,12 @@
-# CDA-08-WEB-FRONTEND-BACKEND
-Repository pour la piscine web du 09/09/20 au 11/10/20  
-Techno : Angular et NodeJS
-Contributeurs : @kyweez & @jjeanniard
+# CDA-08-SIDE-PROJECT
+Repository d'un side project web, pour combler les lacunes d'un de nos formateurs.
+
+## Technos :  
+- Angular (Frontend)
+- NodeJS (Backend)
+- Express (Routing)
+- MariaDB (Database)
+- HTML/CSS/JS
+
+## Contributeurs :
+@kyweez & @jjeanniard
