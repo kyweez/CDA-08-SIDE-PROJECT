@@ -86,13 +86,16 @@ h1 {
 }
 
 #global-container>main {
-    background-color: blueviolet;
+    background-image: url(./background-resto3.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: auto;
+    background-position-y: center;
     height: 75%;
 }
 
 /** MAIN **/
 #global-container>footer{
-    background-color: brown;
     height: 10%;
-
+    background-color: green;
 }
