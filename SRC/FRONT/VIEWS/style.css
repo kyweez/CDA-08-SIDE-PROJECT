@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+:root{
+    --black-color:black;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 62,5%;
+}
+
+#global-container {
+    height: 100vh;
+}
+
+ul{
+    list-style: none;
+}
+
+li {
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: var(--black-color);
+}
+
+/** HEADER **/
+#global-container>header{
+    height: 15%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: stretch;
+    padding: 1rem 0 0 0;
+}
+
+h1 {
+    background-color: saddlebrown;
+    flex-basis: 20rem;
+}
+
+#ul-header{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+#ul-header li {
+    border: 1px solid var(--black-color);
+}
+
+#ul-header li>a {
+    display: block;
+    padding: 0.8rem 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+#ul-header li:first-child{
+    border: 2px solid sandybrown;
+}
+
+#ul-header li:nth-child(2){
+    border: 2px solid sandybrown;
+    background-color: sandybrown;
+    margin: auto 1rem;
+}
+
+#ul-header li:nth-last-child(-n+4){
+    border-right: none;
+}
+
+#ul-header li:nth-last-child(-n+3){
+    border-left: none;
+}
+
+#global-container>main {
+    background-image: url(./background-resto3.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: auto;
+    background-position-y: center;
+    height: 75%;
+}
+
+/** MAIN **/
+#global-container>footer{
+    height: 10%;
+    background-color: green;
+}
