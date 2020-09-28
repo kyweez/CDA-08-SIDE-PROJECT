@@ -68,14 +68,16 @@ h1 {
 
 #ul-header li {
     border: 1px solid var(--black-color);
+    padding: 1.5rem 1.9rem;
 }
 
 #ul-header li>a {
     display: block;
-    padding: 1.5rem 1.9rem;
     font-size: 1rem;
     text-transform: uppercase;
+    border-bottom: 1px solid transparent;
 }
+
 #ul-header li:first-child{
     border: 1px solid var(--gold-color);
 }
@@ -95,8 +97,21 @@ h1 {
 
 #ul-header li:nth-last-child(-n+3){
     border-left: none;
+
+}
+#ul-header li:first-child a:hover{
+    border-bottom: 1px solid var(--black-color);
 }
 
+#ul-header li:nth-child(2) a:hover{
+    border-bottom: 1px solid white;
+}
+
+#ul-header li:nth-last-child(-n+4) a:hover{
+    border-bottom: 1px solid var(--gold-color);
+}
+
+/** MAIN **/
 #global-container>main {
     background-image: url(../../../IMAGES/HOME/background-resto.jpg);
     background-repeat: no-repeat;
@@ -106,13 +121,11 @@ h1 {
     margin: 1% 0;
 }
 
-/** MAIN **/
+/** FOOTER **/
 #global-container>footer{
     height: 11%;
 }
 
-
-/** FOOTER **/
 #footer-nav {
     display: flex;
     align-items: center;
@@ -133,4 +146,8 @@ h1 {
 .footer-li a{
     margin-right: 6rem;
     text-transform: uppercase;
+}
+
+.footer-li a:hover{
+    border-bottom: 1px solid var(--gold-color);
 }
