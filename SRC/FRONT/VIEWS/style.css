@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Miss+Fajardose&family=Montserrat&display=swap');
 
+/********************** GLOBAL **********************/
 :root{
-    --black-color:black;
-    --gold-color:#D9A700;
+    --black-color: #6b6b6b;
+    --gold-color: #D9A700;
+    --white-color: #f7f7f7;
 }
 
 *{
@@ -14,6 +16,7 @@
 body {
     font-size: 62,5%;
     font-family: 'Montserrat', sans-serif;
+    background-color: var(--white-color);
 }
 
 #global-container {
@@ -21,11 +24,7 @@ body {
     margin-left: 10rem;
 }
 
-ul{
-    list-style: none;
-}
-
-li {
+ul, li{
     list-style: none;
 }
 
@@ -34,7 +33,7 @@ a{
     color: var(--black-color);
 }
 
-/** HEADER **/
+/********************** HEADER **********************/
 #global-container>header{
     height: 15%;
     display: flex;
@@ -88,7 +87,7 @@ h1 {
     margin: auto 1rem;
 }
 #ul-header li:nth-child(2) a{
-    color: white;
+    color: var(--white-color);
 }
 
 #ul-header li:nth-last-child(-n+4){
@@ -104,14 +103,14 @@ h1 {
 }
 
 #ul-header li:nth-child(2) a:hover{
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid var(--white-color);
 }
 
 #ul-header li:nth-last-child(-n+4) a:hover{
     border-bottom: 1px solid var(--gold-color);
 }
 
-/** MAIN **/
+/********************** MAIN **********************/
 #global-container>main {
     background-image: url(../../../IMAGES/HOME/background-resto.jpg);
     background-repeat: no-repeat;
@@ -121,7 +120,7 @@ h1 {
     margin: 1% 0;
 }
 
-/** FOOTER **/
+/********************** FOOTER **********************/
 #global-container>footer{
     height: 11%;
 }
