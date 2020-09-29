@@ -21,7 +21,8 @@ body {
 
 #global-container {
     height: 100vh;
-    margin-left: 10rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
 }
 
 ul, li{
@@ -98,6 +99,11 @@ h1 {
     border-left: none;
 
 }
+
+#ul-header li:nth-child(6){
+    border-right: 1px solid var(--black-color);
+}
+
 #ul-header li:first-child a:hover{
     border-bottom: 1px solid var(--black-color);
 }
