@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Miss+Fajardose&family=Montserrat&display=swap');
+
+/********************** GLOBAL **********************/
+:root{
+    --black-color: #6b6b6b;
+    --gold-color: #D9A700;
+    --white-color: #f7f7f7;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 62,5%;
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--white-color);
+}
+
+#global-container {
+    height: 100vh;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+ul, li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: var(--black-color);
+}
+
+/********************** HEADER **********************/
+#global-container>header{
+    height: 15%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+
+h1 {
+    font-family: 'Miss Fajardose', cursive;
+    font-weight: normal;
+    height: 65%;
+    font-size: 6rem;
+    letter-spacing: 0.2rem;
+    border-bottom: 2px solid var(--gold-color);
+    padding-bottom: -1rem;
+}
+#nav-header {
+    display: flex;
+    align-items: center;
+}
+
+#ul-header{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+#ul-header li {
+    border: 1px solid var(--black-color);
+    padding: 1.5rem 1.9rem;
+}
+
+#ul-header li>a {
+    display: block;
+    font-size: 1rem;
+    text-transform: uppercase;
+    border-bottom: 1px solid transparent;
+}
+
+#ul-header li:first-child{
+    border: 1px solid var(--gold-color);
+}
+
+#ul-header li:nth-child(2){
+    border: 1px solid var(--gold-color);
+    background-color: var(--gold-color);
+    margin: auto 1rem;
+}
+#ul-header li:nth-child(2) a{
+    color: var(--white-color);
+}
+
+#ul-header li:nth-last-child(-n+4){
+    border-right: none;
+}
+
+#ul-header li:nth-last-child(-n+3){
+    border-left: none;
+
+}
+
+#ul-header li:nth-child(6){
+    border-right: 1px solid var(--black-color);
+}
+
+#ul-header li:first-child a:hover{
+    border-bottom: 1px solid var(--gold-color);
+}
+
+#ul-header li:nth-child(2) a:hover{
+    border-bottom: 1px solid var(--white-color);
+}
+
+#ul-header li:nth-last-child(-n+4) a:hover{
+    border-bottom: 1px solid var(--gold-color);
+}
+
+/********************** MAIN **********************/
+#global-container>main {
+    background-image: url(../../../IMAGES/HOME/background-resto.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+    height: 70%;
+    margin: 1% 0;
+}
+
+/********************** FOOTER **********************/
+#global-container>footer{
+    height: 11%;
+}
+
+#footer-nav {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+#footer-ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 2rem 0;
+}
+
+.footer-li a{
+    margin-right: 6rem;
+    text-transform: uppercase;
+}
+
+.footer-li a:hover{
+    border-bottom: 1px solid var(--gold-color);
+}

@@ -105,7 +105,7 @@ h1 {
 }
 
 #ul-header li:first-child a:hover{
-    border-bottom: 1px solid var(--black-color);
+    border-bottom: 1px solid var(--gold-color);
 }
 
 #ul-header li:nth-child(2) a:hover{
@@ -118,7 +118,7 @@ h1 {
 
 /********************** MAIN **********************/
 #global-container>main {
-    background-image: url(../../../IMAGES/HOME/background-resto.jpg);
+    background-image: url(../../../IMAGES/DISHES/cave-2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: center;
