@@ -1,9 +1,9 @@
 CREATE DATABASE chezaurel CHARSET utf8mb4 COLLATE utf8mb4_unicode_ci;
 USE chezaurel;
 
-/*
-fk_tables_in_tables2 dans les ALTER TABLES
-*/
+CREATE TABLE `t_street_types` (
+	`street_type` VARCHAR(10) PRIMARY KEY
+)engine=InnoDB;
 
 CREATE TABLE `t_cities`(
 	`city_id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
@@ -30,7 +30,9 @@ CREATE TABLE `t_addresses`(
 	`addr_special_note` VARCHAR(100),
     `addr_street_number` SMALLINT,
     `addr_street_name` VARCHAR(50) NOT NULL,
-    `addr_building_name` VARCHAR(20)
+    `addr_building_name` VARCHAR(20),
+    `street_type` VARCHAR(10),
+    `city_id` INT
 )engine=InnoDB;
 
 
@@ -46,4 +48,12 @@ CREATE TABLE `t_users`(
     `user_unregister_date` DATE
 )engine=InnoDB;
 
-CREATE TABLE `t_use` engine=InnoDB;
+CREATE TABLE `t_use` (
+	`role_id` int,
+    `fearuer_id` int
+)engine=InnoDB;
+
+ALTER TABLE `t_addresses`
+ADD CONSTRAINT `fk_street` FOREIGN KEY (`street_type`) REFERENCES `t_street_types`(`street_type`),
+ADD CONSTRAINT `fk_city`  FOREIGN KEY (`city_id`) REFERENCES `t_cities`(`city_id`); 
+
